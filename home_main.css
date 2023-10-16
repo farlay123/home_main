@@ -1,0 +1,647 @@
+:root {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    --body-color-2: #000000;
+}
+/* Reset Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.text-while
+{
+    color: #fff !important;
+}
+#main
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--body-color-2);
+    -webkit-font-smoothing: antialiased
+}
+#header
+{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    overflow: hidden;
+}
+#nav
+{
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    float: right;
+    text-align: right; /* Đẩy nội dung sang bên phải */
+}
+#nav li
+{
+    position: relative;
+}
+#nav.subnav
+{
+    list-style-type: none;
+}
+#nav >li
+{
+    display: inline-block;
+}
+#nav > li > a
+{
+    color: #fff;
+}
+#nav li a
+{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    font-size: 16px;
+}
+#nav li:hover .subnav
+{
+    display: block;
+}
+#nav >li:hover >a
+{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav
+{
+    position: absolute;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+#nav .subnav a
+{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down
+{
+    font-size: 10px;
+}
+#nav .subnav li:hover a
+{
+    color: #000;
+    background-color: #ccc;
+}
+.m-brand-logo
+ {
+    width: 220px;
+    float: left;
+    justify-content: left;
+  }
+.m-brand-logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-image: none;
+}
+#slider {
+    margin-top: 40px;
+    padding-top: 50%;
+    position: relative;
+    background: url("https://phongnet.com/wp-content/uploads/2015/08/quy-trinh-thiet-ke-phong-game.jpg") top center /cover no-repeat;
+    image-rendering: pixelated;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px black);
+    transition: filter 0.3s; /* Thêm hiệu ứng chuyển đổi để làm mờ mượt */
+}
+
+#slider:hover {
+    opacity: 0.8; /* Đặt opacity thành 0.5 khi di chuột vào */
+    cursor: pointer;
+}
+#slider .text-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center; /* Để căn giữa theo chiều dọc */
+    align-items: center; /* Để căn giữa theo chiều ngang */
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    white-space: nowrap; /* Ngăn chữ tự động xuống dòng */
+}
+
+#slider .text-description {
+    margin-left: 40px;
+    margin-top: 25px;
+    color: #f56d1c;
+}
+.quote {
+    background-color: #fbfbfb;
+}
+.container {
+    display: flex;
+    grid-template-columns: 1fr 1fr; /* Chia thành hai cột bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    width: 100%;
+    max-width: 1425px;
+}
+.container--4
+{
+    display: block;
+    grid-template-columns: 1fr 1fr; /* Chia thành hai cột bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    width: 100%;
+    max-width: 1425px;
+}
+.container--content {
+    display: block;
+    grid-template-columns: 1fr 1fr; /* Chia thành hai cột bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    width: 100%;
+}
+.container-3
+{
+    display: flex;
+    grid-template-columns: 1fr 1fr; /* Chia thành hai cột bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    width: 100%;
+    padding-top: 130px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.row
+{
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    //padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y);
+}
+.col-md-6 {
+    flex: 2; /* Tăng kích thước của cả hai cột lên gấp đôi */
+    padding: 0 20px; /* Thêm khoảng cách nếu cần */
+}
+.col-md-4
+{
+    flex: 1; /* Cột linh hoạt sẽ được chia bằng nhau */
+    padding: 10px;
+    text-align: center;
+}
+.col-md-5
+ {
+    flex: 0 0 auto;
+    width: 41.7%;
+    padding-left: 50px;
+ }
+.title-quote {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 60px;
+    padding: 50px 50px;
+}
+
+.title-quote-p {
+    font-size: 20px;
+    color: #333;
+    text-align: justify;
+}
+
+.title-quote-p a {
+    text-decoration: none;
+    color: black;
+}
+
+.title-quote-p a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.title-quote-p .fa-caret-right {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.color-yellow {
+    color: #f56d1c;
+}
+
+.text-content-fm {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+.text-content-fm-1
+{
+    padding: 20px 4px 50px 50px;
+    text-align: justify;
+}
+.d-content
+{
+    padding-top: 50px;
+    display: block;
+    width: auto;
+    height: 600px;
+}
+.content--qc
+{
+    font-size: 40px;
+    text-align: center;
+}
+.content-qc-span
+{
+    font-size: 50px;
+    font-family: cursive;
+}
+.content-qc-span--text
+{
+    font-size: 2rem;
+    font-family: "Times New Roman";
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.content-qc-span-p
+{
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    padding: 0 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.slider-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+    transition: all .3s ease;
+    &:hover {
+        background: red;
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 100%; /* Điều chỉnh chiều cao ảnh theo nhu cầu */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 4em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+    border:2px solid black;
+    border-radius: 10px;
+}
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu overlay với độ tối màu (0.5 là 50%) */
+    z-index: 1; /* Đảm bảo overlay nằm phía trên ảnh */
+    pointer-events: none; /* Đảm bảo các tương tác không ảnh hưởng đến overlay */
+}
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+.slide-1 {
+    background-image: url("https://source.unsplash.com/t7YycgAoVSw/1600x900");
+}
+.slide-2 {
+    background-image: url("https://source.unsplash.com/11H1SSVcIxc/1600x900");
+}
+.slide-3 {
+    background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
+}
+.caption {
+    position: absolute;
+    top: 78%; /* Đặt chữ ở giữa theo chiều dọc */
+    left: 50%; /* Đặt chữ ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Để căn chữ chính giữa ảnh */
+    color: white; /* Màu chữ */
+    font-size: 24px; /* Kích thước chữ */
+    padding: 10px; /* Khoảng cách giữa chữ và viền */
+    text-align: center;
+    font-family: monospace;
+    z-index: 2;
+}
+.content-center-top
+{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.designer
+{
+    background-position: 2px;
+    background-color: #f7f7f7;
+    height: 30px;
+}
+.col-md-4 a
+{
+   text-decoration: none;
+    color: black;
+}
+.designer h1
+{
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#main-image {
+    display: block;
+    width: 300px; /* Kích thước ảnh */
+    height: auto;
+    transition: opacity 0.5s; /* Hiệu ứng chuyển ảnh */
+}
+
+#next-button {
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.mt-40
+{
+    padding-top: 350px;
+    height: 200px;
+    width: 100%;
+}
+@media (min-width: 768px)
+.col-md-7
+{
+    flex: 0 0 auto;
+    width: 58.3%;
+}
+.col-md-7-img
+{
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: #4a4a4a;
+}
+.p-title
+{
+    font-family: cursive;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.text-jus
+{
+    text-align: justify;
+}
+.fz-40
+{
+    font-size: 40px;
+}
+.title-tp
+{
+    font-family: cursive;
+}
+.text-center
+{
+    text-align: center;
+}
+.mtb-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mb-20
+{
+    margin-bottom: 20px;
+}
+.blog_category {
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Đảm bảo rằng ảnh nền chiều rộng đầy đủ trong phần tử cha */
+    height: 0;
+    padding-top: 56.25%; /* Tỷ lệ khung chiều rộng/giữa 16:9 (56.25%) - Thay đổi theo tỷ lệ mong muốn */
+}
+
+.col-md-8-a {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%; /* Tương tự, đảm bảo rằng chiều rộng/giữa ảnh được xác định */
+}
+
+.col-md-8-content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+* {
+    @media (min-width: 768px)
+
+    .blog_category .overlay_slider {
+        background-image: linear-gradient(to top, #000, transparent);
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    @media (min-width: 768px)
+
+    .blog_category h3 {
+        padding-top: 430px;
+        color: #fff;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        font-family: cursive;
+        font-size: 18px;
+    }
+}
+.mtb-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row--content
+{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+.col-md-8
+{
+        flex: 0 0 auto;
+        width: 50%;
+        padding-right: 6px;
+        padding-left: 15px;
+}
+.col-md-8-content h3 {
+    position: absolute; /* Để văn bản có vị trí tuyệt đối bên trong phần tử .room */
+    bottom: 0; /* Đặt văn bản ở dưới */
+    left: 0; /* Đặt văn bản ở bên trái */
+    margin: 0; /* Xóa các khoảng trắng mặc định của văn bản */
+    padding: 10px; /* Khoảng cách giữa văn bản và viền */
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền của văn bản */
+    color: white; /* Màu chữ */
+    width: 100%; /* Chiều rộng 100% để nó bám vào phần dưới */
+    text-align: center; /* Căn giữa văn bản theo chiều ngang */
+}
+
+.col-md-8-content span {
+    font-size: 18px; /* Điều chỉnh kích thước font chữ cho thẻ span */
+    color: #f5a623; /* Điều chỉnh màu chữ cho thẻ span */
+}
+.philosophy {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.philosophy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Điều chỉnh màu và độ tối màu theo nhu cầu */
+    z-index: 1;
+}
+@media (min-width: 768px)
+.philosophy .overlay-header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to top,#000, transparent);
+    border-radius: 3px;
+}
+.title-header-1 {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    padding-top: 150px;
+    color: #fff;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 500;
+}
+.title-header-1 h2 {
+    font-size: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.footer {
+    background-color: #000; /* Màu nền đen cho footer */
+    color: #fff; /* Màu chữ trắng */
+    padding: 30px 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    text-align: left; /* Căn trái */
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 10px 0; /* Tạo khoảng cách giữa các dòng */
+    text-align: left; /* Căn trái */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    text-align: left; /* Căn trái */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
