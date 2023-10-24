@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ Hàng</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe Việt Nam | Mua và Bán Trang Thương Mại Điện Tử</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/52/6e/71/526e7194884d4a9141dbd637d89b202b.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./content_cart.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-location">
+    <header class="header" style="height: 36px; width: 1280px">
+        <div class="grid">
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--separate  header__navbar-item--qr">
+                        Vào cửa hàng ứng dụng
+                        <div class="header__qr">
+                            <img src="./img/Qr code.png" alt="QR code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./img/Google Play.png" alt="Google Play" class="header__qr-dowload-img">
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./img/App Store.png" alt="App Store" class="header__qr-dowload-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__avbar-tittle--no-pointer">Kết nối</span>
+                        <a href="" class="haeder__navbar-icon-link">
+                            <i class= " header__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="haeder__navbar-icon-link">
+                            <i class= " header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item-has-notify">
+                        <a href="./notification.html" class="header__navbar-item-link">
+                            <i class= " header__navbar-icon fa-regular fa-bell"></i>
+                            Thông báo</a>
+                        <div class="header__notification">
+                            <header class="header__notif-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--readed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./img/512nvcr.png" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Phomai Emmental Thụy Sĩ 3 vị dành cho Chó và Mèo nhập khẩu trực tiếp từ Thụy Sĩ pho mai</span>
+                                            <span class="header__notify-descriotion">
+                                        ☑️ Dành cho mọi giống chó thuộc mọi lứa tuổi, cân nặng<br>
+                                        ☑️ Tốt cho tim mạch, duy trì làn da khoẻ mạnh<br>
+                                        ☑️ Hỗ trợ hệ tiêu hóa và hấp thụ dưỡng chất
+                                    </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./img/034cf1837f8814d83f964a4671a19529.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">[Mã COSDAY giảm 8% đơn 150K] Bông tẩy trang Lameila 222 miếng</span>
+                                            <span class="header__notify-descriotion">Thông tin sản phẩm Bông tẩy trang Lameila
+                                        - 100% bông tự nhiên
+                                        - Túi đựng 222 cái có dây thắt thiết kế tiện lợi, đơn giản giúp buộc miệng túi chống bụi</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--readed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./img/4376383227c90dfe3a688f19e0d25f07.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Thức ăn đông khô cho chó mèo 13 loại thịt sấy khô cao cấp hộp 680g</span>
+                                            <span class="header__notify-descriotion">Homely Pet nâng cấp hộp thức ăn đông khô từ 11 lên 13 LOẠI THỰC PHẨM
+                                        Bổ sung thêm nguyên liệu cao cấp: viên cá hồi, viên thịt bò, viên phô mai mozzarella
+                                    </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--readed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./img/7b4e5bf57e3cf841c2b9cd17b5eca8a3.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Túi 120G - Thanh Phô Mai Sữa Monbad, Snack Thưởng, Thức Ăn, Bánh Thưởng Chó Mèo Hamster - Homely Pet</span>
+                                            <span class="header__notify-descriotion">THANH PHÔ MAI MONBAB CÓ 3 VỊ HẤP DẪN:
+                                        Thanh phô mai sữa non
+                                        Thanh phô mai mè đen
+                                        Thanh phô mai khoai lang tím</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header_notify-footer">
+                                <a href="./notification.html" class="header_notify-footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class= " header__navbar-icon fa-regular fa-circle-question"></i>
+                            Trợ giúp</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="fa-solid fa-globe header__navbar-item-link-icon"></i>
+                            Tiếng Việt
+                            <i class="fa-solid fa-chevron-down header__navbar-item-link-icon-down"></i>
+                        </a>
+                        <div class="header__navbar-item-down">
+                            <ul class="header__navbar-item-down-menu">
+                                <li class="header__navbar-item-down-list ">
+                                    <a href="" class="header__navbar-item-down-list-down header__navbar-item-down-menu-active">Tiếng Việt</a>
+                                    <i class="fa-solid fa-angle-down header__navbar-item-down-menu-icon" ></i>
+                                </li>
+                                <li class="header__navbar-item-down-list">
+                                    <a href="" class="header__navbar-item-down-list-down">Tiếng Anh</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item-active">Đăng nhập</li>   -->
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="https://cf.shopee.vn/file/25c93e1dcdb1f5cb4b62a136a4011ca4_tn" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Farley</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="./profile_account.html">Tài khoản của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="./content.html">Đơn mua</a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="./log__in.html">Đăng Xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="cart_page_header container_wrapper">
+       <div class="container">
+           <div style="display: flex; align-items: center; background-color: white";>
+               <div class="cart_page_header">
+                   <a class="cart_page_logo">
+                       <div></div>
+                       <img style="width: 80px; height: 40px; cursor: pointer" src="./img/logobinhan.png">
+                       <div class="cart_page_logo_page_name">
+                           Giỏ Hàng
+                       </div>
+                   </a>
+               </div>
+               <div class="cart_page_searchbar">
+                   <div class="searchbar">
+                       <div class="searchbar_main">
+                           <form role="search" class="searchbar_input" autocomplete="off">
+                               <input aria-label="CƠ HỘI MUA SẮM NỘI THẤT THẢ GA" class="searchbar-input__input"
+                                      maxlength="128" placeholder="CƠ HỘI MUA SẮM NỘI THẤT THẢ GA" autocomplete="off" aria-autocomplete="list"
+                                      aria-controls="shopee-searchbar-listbox" aria-expanded="false" role="combobox"
+                                      value="">
+                           </form>
+                       </div>
+                       <button class="btn btn_solid_primary btn_s btn_inline search_search_button">
+                           <i class="header-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                       </button>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <div class="tracking-impression-placeholder" style="position: fixed; z-index: 99999; bottom: 0px; left: 0px;">
+
+    </div>
+    <div class="container">
+        <main class="if_cart" style="margin-bottom: 2px">
+            <h2 class="hidden">Product List Selection</h2>
+            <div class="cart_main_hodder">
+                <img width="24" height="20" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/d9e992985b18d96aab90969636ebfd0e.png" alt="fs-icon">
+                <span class="cart_main_span">Nhấn vào Thông tin vận chuyển bên dưới để tiến hành mua hàng bạn nhé !</span>
+            </div>
+            <div class="cart_main_sp">
+                <div class="cart_main_sp_check">
+                    <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select all products">
+                        <div class="stardust-checkbox__box"></div>
+                    </label>
+                </div>
+                <div class="cart_main_sp_content">
+                    Sản Phẩm
+                </div>
+                <div class="cart_main_sp_price">Đơn Giá</div>
+                <div class="cart_main_sp_quantity">Số Lượng</div>
+                <div class="cart_main_sp_money">Số Tiền</div>
+                <div class="cart_main_sp_operation">Thao Tác</div>
+            </div>
+            <section class="cart_sp_content">
+                <h3 class="hidden">Shop Section</h3>
+                <div class="sp_content sp_content_list">
+                   <div class="Supplier_Name">
+                       <div class="Supplier_Name_check">
+                           <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" tabindex="0" role="checkbox" aria-label="Click here to select all products in MOEXU BEDDING">
+                               <div class="stardust-checkbox__box"></div>
+                           </label>
+                       </div>
+                       <a href="#" class="Supplier_Name_a">
+                           <div>
+                               <svg width="17" height="16" viewBox="0 0 17 16" class="_0RxYUS"><title>Shop Icon</title><path d="M1.95 6.6c.156.804.7 1.867 1.357 1.867.654 0 1.43 0 1.43-.933h.932s0 .933 1.155.933c1.176 0 1.15-.933 1.15-.933h.984s-.027.933 1.148.933c1.157 0 1.15-.933 1.15-.933h.94s0 .933 1.43.933c1.368 0 1.356-1.867 1.356-1.867H1.95zm11.49-4.666H3.493L2.248 5.667h12.437L13.44 1.934zM2.853 14.066h11.22l-.01-4.782c-.148.02-.295.042-.465.042-.7 0-1.436-.324-1.866-.86-.376.53-.88.86-1.622.86-.667 0-1.255-.417-1.64-.86-.39.443-.976.86-1.643.86-.74 0-1.246-.33-1.623-.86-.43.536-1.195.86-1.895.86-.152 0-.297-.02-.436-.05l-.018 4.79zM14.996 12.2v.933L14.984 15H1.94l-.002-1.867V8.84C1.355 8.306 1.003 7.456 1 6.6L2.87 1h11.193l1.866 5.6c0 .943-.225 1.876-.934 2.39v3.21z" stroke-width=".3" stroke="#333" fill="#333" fill-rule="evenodd"></path>
+                               </svg>
+                           </div>
+                           <span class="Supplier_Name_a_span">Nội Thất Bình An</span>
+                       </a>
+                       <button class="Supplier_Name_button">
+                           <svg viewBox="0 0 16 16" class="svg-icon bTa6Yo"><g fill-rule="evenodd"><path d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path></g>
+                           </svg>
+                       </button>
+                       <div class="Supplier_Name_space"></div>
+                   </div>
+                </div>
+                <section class="cart_information" role="list">
+                    <div class="cart_information_main">
+                        <div class="cart_information_main_tittle">
+                            <span class="cart_information_main_tittle_span">Deal Sốc</span>
+                            <span>Khi Mua Kèm Các Thiết Bị Nội Thất</span>
+                            <span class="cart_information_main_tittle_add">
+                                <a href="#">Thêm<svg viewBox="0 0 12 12" fill="none" width="12" height="12" color="#ee4d2d" class="HAW5Go">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.293 6L4.146.854l.708-.708L10 5.293a1 1 0 010 1.414l-5.146 5.147-.708-.707L9.293 6z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="cart_information_list_item" role="listitem">
+                            <h4 class="hidden">cart_accessibility_item</h4>
+                            <div class="cart_information_list_item">
+                                <div class="cart_information_list_item__check">
+                                    <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select this product">
+                                        <div class="stardust-checkbox__box"></div>
+                                    </label>
+                                </div>
+                                <div class="cart_information--lst">
+                                    <div class="cart_information--lst--list">
+                                        <a title="" href="">
+                                            <img class="WanNdG" src="https://noithatm8.com/wp-content/uploads/ava-ban-tra-doi-ma-titan-dep-1.jpg" alt="product image">
+                                        </a>
+                                        <div class="cart_information--lst--list_content">
+                                            <a class="JB57cn" title="" href="">BỘ BÀN TRÀ ĐÔI PHÒNG KHÁCH MẠ TITAN ĐẲNG CẤP M8-4438</a>
+                                            <img class="eQNnTs" src="https://down-vn.img.susercontent.com/file/vn-50009109-62f1b9357f4e192d9d9c94e110e35751">
+                                            <div class="QRuJU-"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_classify">
+                                    <div class="cart_information_classify_main">
+                                        <button class="S-Rdfh" role="button" tabindex="0">
+                                            <div class="rcEQuz">Phân loại hàng:
+                                                <div class="_75YZdf"></div>
+                                            </div>
+                                            <div class="dcPz7Y">Bàn Trà Titan,Ngang 3m x cao 2m2</div>
+                                        </button>
+                                            <div></div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_price">
+                                    <div>
+                                        <span class="cart_information_price_old">₫5.400.000</span>
+                                        <span class="cart_information_price_new">₫4.800.000</span>
+                                    </div>
+                                </div>
+                                <div class="cart_information_number">
+                                    <div class="cart_information_number_main input_quanlity">
+                                        <button class="cart_information_number_button">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon"><polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
+                                            </svg>
+                                        </button>
+                                        <input class="cart_information_number_input" type="text" role="spinbutton" aria-valuenow="1" value="1">
+                                        <button class="cart_information_number_button" aria-label="Increase">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign">
+                                                <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5">
+                                                </polygon>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_information_age">
+                                    <span>₫4.800.000</span>
+                                    <span class="hidden">Total price: ₫4.800.000</span>
+                                </div>
+                                <div class="cart_information_operation">
+                                    <button class="fX1Y2g">Xóa</button>
+                                    <div class="tkUy0S">
+                                        <button class="button-no-outline y36pik">
+                                            <span class="i01b-H">Tìm sản phẩm tương tự</span>
+                                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon XHOHXQ icon-down-arrow-filled">
+                                                <path d="m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z"></path>
+                                </svg>
+                                </button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="cart_information_space"></div>
+                </section>
+                <div class="cart_information_footer">
+                    <img width="24" height="20" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/d9e992985b18d96aab90969636ebfd0e.png" alt="fs-icon">
+                    <div class="cart_information_footer_content">
+                        Miễn phí vận chuyển cho đơn hàng tối thiểu ₫6.000.000; Giảm 50% phí vận chuyển đơn tối thiểu ₫4.000.000
+                    </div>
+                    <div class="cart_information_drawer" id="drawer-id" tabindex="0">
+                         <span class="cart_information_drawer_span">
+                             Tìm Hiểu Thêm
+                         </span>
+                    </div>
+                </div>
+            </section>
+            <section class="cart_sp_content">
+                <h3 class="hidden">Shop Section</h3>
+                <div class="sp_content sp_content_list">
+                    <div class="Supplier_Name">
+                        <div class="Supplier_Name_check">
+                            <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" tabindex="0" role="checkbox" aria-label="Click here to select all products in MOEXU BEDDING">
+                                <div class="stardust-checkbox__box"></div>
+                            </label>
+                        </div>
+                        <a href="#" class="Supplier_Name_a">
+                            <div class="_0RxYUS"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="16" fill="none">
+                                <title>Preferred Seller</title>
+                                <path fill="#EE4D2D" fill-rule="evenodd" d="M0 2C0 .9.9 0 2 0h58a2 2 0 012 2v12a2 2 0 01-2 2H2a2 2 0 01-2-2V2z" clip-rule="evenodd"></path>
+                                <g clip-path="url(#clip0)">
+                                    <path fill="#fff" d="M8.7 13H7V8.7L5.6 6.3A828.9 828.9 0 004 4h2l2 3.3a1197.3 1197.3 0 002-3.3h1.6L8.7 8.7V13zm7.9-1.7h1.7c0 .3-.2.6-.5 1-.2.3-.5.5-1 .7l-.6.2h-.8c-.5 0-1 0-1.5-.2l-1-.8a4 4 0 01-.9-2.4c0-1 .3-1.9 1-2.6a3 3 0 012.4-1l.8.1a2.8 2.8 0 011.3.7l.4.6.3.8V10h-4.6l.2 1 .4.7.6.5.7.1c.4 0 .7 0 .9-.2l.2-.6v-.1zm0-2.3l-.1-1-.3-.3c0-.2-.1-.2-.2-.3l-.8-.2c-.3 0-.6.2-.9.5l-.3.5a4 4 0 00-.3.8h3zm-1.4-4.2l-.7.7h-1.4l1.5-2h1.1l1.5 2h-1.4l-.6-.7zm8.1 1.6H25V13h-1.7v-.5.1H23l-.7.5-.9.1-1-.1-.7-.4c-.3-.2-.4-.5-.6-.8l-.2-1.3V6.4h1.7v3.7c0 1 0 1.6.3 1.7.2.2.5.3.7.3h.4l.4-.2.3-.3.3-.5.2-1.4V6.4zM34.7 13a11.2 11.2 0 01-1.5.2 3.4 3.4 0 01-1.3-.2 2 2 0 01-.5-.3l-.3-.5-.2-.6V7.4h-1.2v-1h1.1V5h1.7v1.5h1.9v1h-2v3l.2 1.2.1.3.2.2h.3l.2.1c.2 0 .6 0 1.3-.3v1zm2.4 0h-1.7V3.5h1.7v3.4a3.7 3.7 0 01.2-.1 2.8 2.8 0 013.4 0l.4.4.2.7V13h-1.6V9.3 8.1l-.4-.6-.6-.2a1 1 0 00-.4.1 2 2 0 00-.4.2l-.3.3a3 3 0 00-.3.5l-.1.5-.1.9V13zm5.4-6.6H44V13h-1.6V6.4zm-.8-.9l1.8-2h1.8l-2.1 2h-1.5zm7.7 5.8H51v.5l-.4.5a2 2 0 01-.4.4l-.6.3-1.4.2c-.5 0-1 0-1.4-.2l-1-.7c-.3-.3-.5-.7-.6-1.2-.2-.4-.3-.9-.3-1.4 0-.5.1-1 .3-1.4a2.6 2.6 0 011.6-1.8c.4-.2.9-.3 1.4-.3.6 0 1 .1 1.5.3.4.1.7.4 1 .6l.2.5.1.5h-1.6c0-.3-.1-.5-.3-.6-.2-.2-.4-.3-.8-.3s-.8.2-1.2.6c-.3.4-.4 1-.4 2 0 .9.1 1.5.4 1.8.4.4.8.6 1.2.6h.5l.3-.2.2-.3v-.4zm4 1.7h-1.6V3.5h1.7v3.4a3.7 3.7 0 01.2-.1 2.8 2.8 0 013.4 0l.3.4.3.7V13h-1.6V9.3L56 8.1c-.1-.3-.2-.5-.4-.6l-.6-.2a1 1 0 00-.3.1 2 2 0 00-.4.2l-.3.3a3 3 0 00-.3.5l-.2.5V13z"></path></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h55v16H0z" transform="translate(4)">
+                            </path>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </div>
+                            <span class="Supplier_Name_a_span">Nội Thất Bình An</span>
+                        </a>
+                        <button class="Supplier_Name_button">
+                            <svg viewBox="0 0 16 16" class="svg-icon bTa6Yo"><g fill-rule="evenodd"><path d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path></g>
+                            </svg>
+                        </button>
+                        <div class="Supplier_Name_space"></div>
+                    </div>
+                </div>
+                <section class="cart_information" role="list">
+                    <div class="cart_information_main">
+                        <div class="cart_information_list_item" role="listitem">
+                            <h4 class="hidden">cart_accessibility_item</h4>
+                            <div class="cart_information_list_item">
+                                <div class="cart_information_list_item__check">
+                                    <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select this product">
+                                        <div class="stardust-checkbox__box"></div>
+                                    </label>
+                                </div>
+                                <div class="cart_information--lst">
+                                    <div class="cart_information--lst--list">
+                                        <a title="" href="">
+                                            <img class="WanNdG" src="https://noithatm8.com/wp-content/uploads/ava-ban-tra-doi-ma-titan-dep-1.jpg" alt="product image">
+                                        </a>
+                                        <div class="cart_information--lst--list_content">
+                                            <a class="JB57cn" title="" href="">BỘ BÀN TRÀ ĐÔI PHÒNG KHÁCH MẠ TITAN ĐẲNG CẤP M8-4438</a>
+                                            <img class="eQNnTs" src="https://down-vn.img.susercontent.com/file/vn-50009109-62f1b9357f4e192d9d9c94e110e35751">
+                                            <div class="QRuJU-"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_classify">
+                                    <div class="cart_information_classify_main">
+                                        <button class="S-Rdfh" role="button" tabindex="0">
+                                            <div class="rcEQuz">Phân loại hàng:
+                                                <div class="_75YZdf"></div>
+                                            </div>
+                                            <div class="dcPz7Y">Bàn Trà Titan,Ngang 3m x cao 2m2</div>
+                                        </button>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_price">
+                                    <div>
+                                        <span class="cart_information_price_old">₫5.400.000</span>
+                                        <span class="cart_information_price_new">₫4.800.000</span>
+                                    </div>
+                                </div>
+                                <div class="cart_information_number">
+                                    <div class="cart_information_number_main input_quanlity">
+                                        <button class="cart_information_number_button">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon"><polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
+                                            </svg>
+                                        </button>
+                                        <input class="cart_information_number_input" type="text" role="spinbutton" aria-valuenow="1" value="1">
+                                        <button class="cart_information_number_button" aria-label="Increase">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign">
+                                                <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5">
+                                                </polygon>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_information_age">
+                                    <span>₫4.800.000</span>
+                                    <span class="hidden">Total price: ₫4.800.000</span>
+                                </div>
+                                <div class="cart_information_operation">
+                                    <button class="fX1Y2g">Xóa</button>
+                                    <div class="tkUy0S">
+                                        <button class="button-no-outline y36pik">
+                                            <span class="i01b-H">Tìm sản phẩm tương tự</span>
+                                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon XHOHXQ icon-down-arrow-filled">
+                                                <path d="m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_information_space"></div>
+                </section>
+                <div class="cart_information_footer">
+                    <img width="24" height="20" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/d9e992985b18d96aab90969636ebfd0e.png" alt="fs-icon">
+                    <div class="cart_information_footer_content">
+                        Miễn phí vận chuyển cho đơn hàng tối thiểu ₫6.000.000; Giảm 50% phí vận chuyển đơn tối thiểu ₫4.000.000
+                    </div>
+                    <div class="cart_information_drawer" id="drawer-id" tabindex="0">
+                         <span class="cart_information_drawer_span">
+                             Tìm Hiểu Thêm
+                         </span>
+                    </div>
+                </div>
+            </section>
+            <section class="cart_sp_content">
+                <h3 class="hidden">Shop Section</h3>
+                <div class="sp_content sp_content_list">
+                    <div class="Supplier_Name">
+                        <div class="Supplier_Name_check">
+                            <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" tabindex="0" role="checkbox" aria-label="Click here to select all products in MOEXU BEDDING">
+                                <div class="stardust-checkbox__box"></div>
+                            </label>
+                        </div>
+                        <a href="#" class="Supplier_Name_a">
+                            <div>
+                                <svg width="17" height="16" viewBox="0 0 17 16" class="_0RxYUS"><title>Shop Icon</title><path d="M1.95 6.6c.156.804.7 1.867 1.357 1.867.654 0 1.43 0 1.43-.933h.932s0 .933 1.155.933c1.176 0 1.15-.933 1.15-.933h.984s-.027.933 1.148.933c1.157 0 1.15-.933 1.15-.933h.94s0 .933 1.43.933c1.368 0 1.356-1.867 1.356-1.867H1.95zm11.49-4.666H3.493L2.248 5.667h12.437L13.44 1.934zM2.853 14.066h11.22l-.01-4.782c-.148.02-.295.042-.465.042-.7 0-1.436-.324-1.866-.86-.376.53-.88.86-1.622.86-.667 0-1.255-.417-1.64-.86-.39.443-.976.86-1.643.86-.74 0-1.246-.33-1.623-.86-.43.536-1.195.86-1.895.86-.152 0-.297-.02-.436-.05l-.018 4.79zM14.996 12.2v.933L14.984 15H1.94l-.002-1.867V8.84C1.355 8.306 1.003 7.456 1 6.6L2.87 1h11.193l1.866 5.6c0 .943-.225 1.876-.934 2.39v3.21z" stroke-width=".3" stroke="#333" fill="#333" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <span class="Supplier_Name_a_span">Nội Thất Bình An</span>
+                        </a>
+                        <button class="Supplier_Name_button">
+                            <svg viewBox="0 0 16 16" class="svg-icon bTa6Yo"><g fill-rule="evenodd"><path d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path></g>
+                            </svg>
+                        </button>
+                        <div class="Supplier_Name_space"></div>
+                    </div>
+                </div>
+                <section class="cart_information" role="list">
+                    <div class="cart_information_main">
+                        <div class="cart_information_main_tittle">
+                            <span class="cart_information_main_tittle_span">Mua Kèm</span>
+                            <span>Giá trị đơn hàng trên dd10.000.000 được tặng kèm 2 món trang trí nội thất</span>
+                            <span class="cart_information_main_tittle_add">
+                                <a href="#">Thêm<svg viewBox="0 0 12 12" fill="none" width="12" height="12" color="#ee4d2d" class="HAW5Go">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.293 6L4.146.854l.708-.708L10 5.293a1 1 0 010 1.414l-5.146 5.147-.708-.707L9.293 6z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="cart_information_list_item" role="listitem">
+                            <h4 class="hidden">cart_accessibility_item</h4>
+                            <div class="cart_information_list_item">
+                                <div class="cart_information_list_item__check">
+                                    <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select this product">
+                                        <div class="stardust-checkbox__box"></div>
+                                    </label>
+                                </div>
+                                <div class="cart_information--lst">
+                                    <div class="cart_information--lst--list">
+                                        <a title="" href="">
+                                            <img class="WanNdG" src="https://noithatm8.com/wp-content/uploads/ava-ban-tra-doi-ma-titan-dep-1.jpg" alt="product image">
+                                        </a>
+                                        <div class="cart_information--lst--list_content">
+                                            <a class="JB57cn" title="" href="">BỘ BÀN TRÀ ĐÔI PHÒNG KHÁCH MẠ TITAN ĐẲNG CẤP M8-4438</a>
+                                            <img class="eQNnTs" src="https://down-vn.img.susercontent.com/file/vn-50009109-62f1b9357f4e192d9d9c94e110e35751">
+                                            <div class="QRuJU-"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_classify">
+                                    <div class="cart_information_classify_main">
+                                        <button class="S-Rdfh" role="button" tabindex="0">
+                                            <div class="rcEQuz">Phân loại hàng:
+                                                <div class="_75YZdf"></div>
+                                            </div>
+                                            <div class="dcPz7Y">Bàn Trà Titan,Ngang 3m x cao 2m2</div>
+                                        </button>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_price">
+                                    <div>
+                                        <span class="cart_information_price_old">₫5.400.000</span>
+                                        <span class="cart_information_price_new">₫4.800.000</span>
+                                    </div>
+                                </div>
+                                <div class="cart_information_number">
+                                    <div class="cart_information_number_main input_quanlity">
+                                        <button class="cart_information_number_button">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon"><polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
+                                            </svg>
+                                        </button>
+                                        <input class="cart_information_number_input" type="text" role="spinbutton" aria-valuenow="1" value="1">
+                                        <button class="cart_information_number_button" aria-label="Increase">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign">
+                                                <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5">
+                                                </polygon>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_information_age">
+                                    <span>₫4.800.000</span>
+                                    <span class="hidden">Total price: ₫4.800.000</span>
+                                </div>
+                                <div class="cart_information_operation">
+                                    <button class="fX1Y2g">Xóa</button>
+                                    <div class="tkUy0S">
+                                        <button class="button-no-outline y36pik">
+                                            <span class="i01b-H">Tìm sản phẩm tương tự</span>
+                                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon XHOHXQ icon-down-arrow-filled">
+                                                <path d="m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_information_space"></div>
+                </section>
+                <div class="cart_information_footer">
+                    <img width="24" height="20" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/d9e992985b18d96aab90969636ebfd0e.png" alt="fs-icon">
+                    <div class="cart_information_footer_content">
+                        Miễn phí vận chuyển cho đơn hàng tối thiểu ₫6.000.000; Giảm 50% phí vận chuyển đơn tối thiểu ₫4.000.000
+                    </div>
+                    <div class="cart_information_drawer" id="drawer-id" tabindex="0">
+                         <span class="cart_information_drawer_span">
+                             Tìm Hiểu Thêm
+                         </span>
+                    </div>
+                </div>
+            </section>
+            <section class="cart_sp_content">
+                <h3 class="hidden">Shop Section</h3>
+                <div class="sp_content sp_content_list">
+                    <div class="Supplier_Name">
+                        <div class="Supplier_Name_check">
+                            <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" tabindex="0" role="checkbox" aria-label="Click here to select all products in MOEXU BEDDING">
+                                <div class="stardust-checkbox__box"></div>
+                            </label>
+                        </div>
+                        <a href="#" class="Supplier_Name_a">
+                            <div>
+                                <svg width="17" height="16" viewBox="0 0 17 16" class="_0RxYUS"><title>Shop Icon</title><path d="M1.95 6.6c.156.804.7 1.867 1.357 1.867.654 0 1.43 0 1.43-.933h.932s0 .933 1.155.933c1.176 0 1.15-.933 1.15-.933h.984s-.027.933 1.148.933c1.157 0 1.15-.933 1.15-.933h.94s0 .933 1.43.933c1.368 0 1.356-1.867 1.356-1.867H1.95zm11.49-4.666H3.493L2.248 5.667h12.437L13.44 1.934zM2.853 14.066h11.22l-.01-4.782c-.148.02-.295.042-.465.042-.7 0-1.436-.324-1.866-.86-.376.53-.88.86-1.622.86-.667 0-1.255-.417-1.64-.86-.39.443-.976.86-1.643.86-.74 0-1.246-.33-1.623-.86-.43.536-1.195.86-1.895.86-.152 0-.297-.02-.436-.05l-.018 4.79zM14.996 12.2v.933L14.984 15H1.94l-.002-1.867V8.84C1.355 8.306 1.003 7.456 1 6.6L2.87 1h11.193l1.866 5.6c0 .943-.225 1.876-.934 2.39v3.21z" stroke-width=".3" stroke="#333" fill="#333" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <span class="Supplier_Name_a_span">Nội Thất Bình An</span>
+                        </a>
+                        <button class="Supplier_Name_button">
+                            <svg viewBox="0 0 16 16" class="svg-icon bTa6Yo"><g fill-rule="evenodd"><path d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path></g>
+                            </svg>
+                        </button>
+                        <div class="Supplier_Name_space"></div>
+                    </div>
+                </div>
+                <section class="cart_information" role="list">
+                    <div class="cart_information_main">
+                        <div class="cart_information_main_tittle">
+                            <span class="cart_information_main_tittle_span">Deal Sốc</span>
+                            <span>Khi Mua Kèm Các Thiết Bị Nội Thất</span>
+                            <span class="cart_information_main_tittle_add">
+                                <a href="#">Thêm<svg viewBox="0 0 12 12" fill="none" width="12" height="12" color="#ee4d2d" class="HAW5Go">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.293 6L4.146.854l.708-.708L10 5.293a1 1 0 010 1.414l-5.146 5.147-.708-.707L9.293 6z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="cart_information_list_item" role="listitem">
+                            <h4 class="hidden">cart_accessibility_item</h4>
+                            <div class="cart_information_list_item">
+                                <div class="cart_information_list_item__check">
+                                    <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select this product">
+                                        <div class="stardust-checkbox__box"></div>
+                                    </label>
+                                </div>
+                                <div class="cart_information--lst">
+                                    <div class="cart_information--lst--list">
+                                        <a title="" href="">
+                                            <img class="WanNdG" src="https://noithatm8.com/wp-content/uploads/ava-ban-tra-doi-ma-titan-dep-1.jpg" alt="product image">
+                                        </a>
+                                        <div class="cart_information--lst--list_content">
+                                            <a class="JB57cn" title="" href="">BỘ BÀN TRÀ ĐÔI PHÒNG KHÁCH MẠ TITAN ĐẲNG CẤP M8-4438</a>
+                                            <img class="eQNnTs" src="https://down-vn.img.susercontent.com/file/vn-50009109-62f1b9357f4e192d9d9c94e110e35751">
+                                            <div class="QRuJU-"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_classify">
+                                    <div class="cart_information_classify_main">
+                                        <button class="S-Rdfh" role="button" tabindex="0">
+                                            <div class="rcEQuz">Phân loại hàng:
+                                                <div class="_75YZdf"></div>
+                                            </div>
+                                            <div class="dcPz7Y">Bàn Trà Titan,Ngang 3m x cao 2m2</div>
+                                        </button>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_price">
+                                    <div>
+                                        <span class="cart_information_price_old">₫5.400.000</span>
+                                        <span class="cart_information_price_new">₫4.800.000</span>
+                                    </div>
+                                </div>
+                                <div class="cart_information_number">
+                                    <div class="cart_information_number_main input_quanlity">
+                                        <button class="cart_information_number_button">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon"><polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
+                                            </svg>
+                                        </button>
+                                        <input class="cart_information_number_input" type="text" role="spinbutton" aria-valuenow="1" value="1">
+                                        <button class="cart_information_number_button" aria-label="Increase">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign">
+                                                <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5">
+                                                </polygon>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_information_age">
+                                    <span>₫4.800.000</span>
+                                    <span class="hidden">Total price: ₫4.800.000</span>
+                                </div>
+                                <div class="cart_information_operation">
+                                    <button class="fX1Y2g">Xóa</button>
+                                    <div class="tkUy0S">
+                                        <button class="button-no-outline y36pik">
+                                            <span class="i01b-H">Tìm sản phẩm tương tự</span>
+                                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon XHOHXQ icon-down-arrow-filled">
+                                                <path d="m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_information_space"></div>
+                </section>
+                <div class="cart_information_footer">
+                    <img width="24" height="20" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/d9e992985b18d96aab90969636ebfd0e.png" alt="fs-icon">
+                    <div class="cart_information_footer_content">
+                        Miễn phí vận chuyển cho đơn hàng tối thiểu ₫6.000.000; Giảm 50% phí vận chuyển đơn tối thiểu ₫4.000.000
+                    </div>
+                    <div class="cart_information_drawer" id="drawer-id" tabindex="0">
+                         <span class="cart_information_drawer_span">
+                             Tìm Hiểu Thêm
+                         </span>
+                    </div>
+                </div>
+            </section>
+            <section class="cart_sp_content">
+                <h3 class="hidden">Shop Section</h3>
+                <div class="sp_content sp_content_list">
+                    <div class="Supplier_Name">
+                        <div class="Supplier_Name_check">
+                            <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" tabindex="0" role="checkbox" aria-label="Click here to select all products in MOEXU BEDDING">
+                                <div class="stardust-checkbox__box"></div>
+                            </label>
+                        </div>
+                        <a href="#" class="Supplier_Name_a">
+                            <div>
+                                <svg width="17" height="16" viewBox="0 0 17 16" class="_0RxYUS"><title>Shop Icon</title><path d="M1.95 6.6c.156.804.7 1.867 1.357 1.867.654 0 1.43 0 1.43-.933h.932s0 .933 1.155.933c1.176 0 1.15-.933 1.15-.933h.984s-.027.933 1.148.933c1.157 0 1.15-.933 1.15-.933h.94s0 .933 1.43.933c1.368 0 1.356-1.867 1.356-1.867H1.95zm11.49-4.666H3.493L2.248 5.667h12.437L13.44 1.934zM2.853 14.066h11.22l-.01-4.782c-.148.02-.295.042-.465.042-.7 0-1.436-.324-1.866-.86-.376.53-.88.86-1.622.86-.667 0-1.255-.417-1.64-.86-.39.443-.976.86-1.643.86-.74 0-1.246-.33-1.623-.86-.43.536-1.195.86-1.895.86-.152 0-.297-.02-.436-.05l-.018 4.79zM14.996 12.2v.933L14.984 15H1.94l-.002-1.867V8.84C1.355 8.306 1.003 7.456 1 6.6L2.87 1h11.193l1.866 5.6c0 .943-.225 1.876-.934 2.39v3.21z" stroke-width=".3" stroke="#333" fill="#333" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <span class="Supplier_Name_a_span">Nội Thất Bình An</span>
+                        </a>
+                        <button class="Supplier_Name_button">
+                            <svg viewBox="0 0 16 16" class="svg-icon bTa6Yo"><g fill-rule="evenodd"><path d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path></g>
+                            </svg>
+                        </button>
+                        <div class="Supplier_Name_space"></div>
+                    </div>
+                </div>
+                <section class="cart_information" role="list">
+                    <div class="cart_information_main">
+                        <div class="cart_information_main_tittle">
+                            <span class="cart_information_main_tittle_span">Deal Sốc</span>
+                            <span>Khi Mua Kèm Các Thiết Bị Nội Thất</span>
+                            <span class="cart_information_main_tittle_add">
+                                <a href="#">Thêm<svg viewBox="0 0 12 12" fill="none" width="12" height="12" color="#ee4d2d" class="HAW5Go">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.293 6L4.146.854l.708-.708L10 5.293a1 1 0 010 1.414l-5.146 5.147-.708-.707L9.293 6z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="cart_information_list_item" role="listitem">
+                            <h4 class="hidden">cart_accessibility_item</h4>
+                            <div class="cart_information_list_item">
+                                <div class="cart_information_list_item__check">
+                                    <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select this product">
+                                        <div class="stardust-checkbox__box"></div>
+                                    </label>
+                                </div>
+                                <div class="cart_information--lst">
+                                    <div class="cart_information--lst--list">
+                                        <a title="" href="">
+                                            <img class="WanNdG" src="https://noithatm8.com/wp-content/uploads/ava-ban-tra-doi-ma-titan-dep-1.jpg" alt="product image">
+                                        </a>
+                                        <div class="cart_information--lst--list_content">
+                                            <a class="JB57cn" title="" href="">BỘ BÀN TRÀ ĐÔI PHÒNG KHÁCH MẠ TITAN ĐẲNG CẤP M8-4438</a>
+                                            <img class="eQNnTs" src="https://down-vn.img.susercontent.com/file/vn-50009109-62f1b9357f4e192d9d9c94e110e35751">
+                                            <div class="QRuJU-"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_classify">
+                                    <div class="cart_information_classify_main">
+                                        <button class="S-Rdfh" role="button" tabindex="0">
+                                            <div class="rcEQuz">Phân loại hàng:
+                                                <div class="_75YZdf"></div>
+                                            </div>
+                                            <div class="dcPz7Y">Bàn Trà Titan,Ngang 3m x cao 2m2</div>
+                                        </button>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="cart_information_price">
+                                    <div>
+                                        <span class="cart_information_price_old">₫5.400.000</span>
+                                        <span class="cart_information_price_new">₫4.800.000</span>
+                                    </div>
+                                </div>
+                                <div class="cart_information_number">
+                                    <div class="cart_information_number_main input_quanlity">
+                                        <button class="cart_information_number_button">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon"><polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
+                                            </svg>
+                                        </button>
+                                        <input class="cart_information_number_input" type="text" role="spinbutton" aria-valuenow="1" value="1">
+                                        <button class="cart_information_number_button" aria-label="Increase">
+                                            <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign">
+                                                <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5">
+                                                </polygon>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_information_age">
+                                    <span>₫4.800.000</span>
+                                    <span class="hidden">Total price: ₫4.800.000</span>
+                                </div>
+                                <div class="cart_information_operation">
+                                    <button class="fX1Y2g">Xóa</button>
+                                    <div class="tkUy0S">
+                                        <button class="button-no-outline y36pik">
+                                            <span class="i01b-H">Tìm sản phẩm tương tự</span>
+                                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon XHOHXQ icon-down-arrow-filled">
+                                                <path d="m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_information_space"></div>
+                </section>
+                <div class="cart_information_footer">
+                    <img width="24" height="20" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/d9e992985b18d96aab90969636ebfd0e.png" alt="fs-icon">
+                    <div class="cart_information_footer_content">
+                        Miễn phí vận chuyển cho đơn hàng tối thiểu ₫6.000.000; Giảm 50% phí vận chuyển đơn tối thiểu ₫4.000.000
+                    </div>
+                    <div class="cart_information_drawer" id="drawer-id" tabindex="0">
+                         <span class="cart_information_drawer_span">
+                             Tìm Hiểu Thêm
+                         </span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="cart_accessibility_footer cart_accessibility_footer_list">
+            <h2 class="hidden">cart_accessibility_footer</h2>
+            <div class="cart_accessibility_footer__header">
+                <h3 class="hidden">cart_accessibility_footer_voucher_row</h3>
+                <svg fill="none" viewBox="0 -2 23 22" class="svg-icon icon-voucher-line"><g filter="url(#voucher-filter0_d)"><mask id="a" fill="#fff">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2h18v2.32a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75V16H1v-2.12a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75V2z"></path></mask>
+                    <path d="M19 2h1V1h-1v1zM1 2V1H0v1h1zm18 2.32l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zM19 16v1h1v-1h-1zM1 16H0v1h1v-1zm0-2.12l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zM19 1H1v2h18V1zm1 3.32V2h-2v2.32h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zM20 16v-2.13h-2V16h2zM1 17h18v-2H1v2zm-1-3.12V16h2v-2.12H0zm1.4.91a2.5 2.5 0 001.5-2.29h-2a.5.5 0 01-.3.46l.8 1.83zm1.5-2.29a2.5 2.5 0 00-1.5-2.3l-.8 1.84c.18.08.3.26.3.46h2zM0 10.48v.65h2v-.65H0zM.9 9.1a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 9.1h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 8.65zM0 7.08v.65h2v-.65H0zM.9 5.7a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 5.7h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 5.25zM0 2v2.33h2V2H0z" mask="url(#a)"></path></g><path clip-rule="evenodd" d="M6.49 14.18h.86v-1.6h-.86v1.6zM6.49 11.18h.86v-1.6h-.86v1.6zM6.49 8.18h.86v-1.6h-.86v1.6zM6.49 5.18h.86v-1.6h-.86v1.6z"></path><defs><filter id="voucher-filter0_d" x="0" y="1" width="20" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation=".5"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs>
+                </svg>
+                <div class="cart_accessibility_footer__headertittel">Vocher</div>
+                <div class="cart_accessibility_footer__space"></div>
+                <button class="cart_accessibility_footer__button">Chọn hoặc nhập mã</button>
+            </div>
+            <div class="h-Ivjs _1Xi-wS"></div>
+            <h3 class="hidden">cart_accessibility_footer_coin_row</h3>
+            <div class="cart_accessibility_footer__left">
+                <label class="stardust-checkbox stardust-checkbox--disabled"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="true" tabindex="0" role="checkbox" aria-label="Coins Balance 0">
+                    <div class="stardust-checkbox__box"></div>
+                </label>
+            </div>
+            <div class="cart_accessibility_footer__right">
+                <div class="cart_accessibility_footer__notif">Bạn chưa chọn sản phẩm</div>
+                <div class="stardust-popover _2Z2rR4" id="stardust-popover0" tabindex="0">
+                    <div role="button" class="stardust-popover__target">
+                        <div>
+                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="svg-icon OzpV75 icon-help"><g><circle cx="7.5" cy="7.5" fill="none" r="6.5" stroke-miterlimit="10"></circle><path d="m5.3 5.3c.1-.3.3-.6.5-.8s.4-.4.7-.5.6-.2 1-.2c.3 0 .6 0 .9.1s.5.2.7.4.4.4.5.7.2.6.2.9c0 .2 0 .4-.1.6s-.1.3-.2.5c-.1.1-.2.2-.3.3-.1.2-.2.3-.4.4-.1.1-.2.2-.3.3s-.2.2-.3.4c-.1.1-.1.2-.2.4s-.1.3-.1.5v.4h-.9v-.5c0-.3.1-.6.2-.8s.2-.4.3-.5c.2-.2.3-.3.5-.5.1-.1.3-.3.4-.4.1-.2.2-.3.3-.5s.1-.4.1-.7c0-.4-.2-.7-.4-.9s-.5-.3-.9-.3c-.3 0-.5 0-.7.1-.1.1-.3.2-.4.4-.1.1-.2.3-.3.5 0 .2-.1.5-.1.7h-.9c0-.3.1-.7.2-1zm2.8 5.1v1.2h-1.2v-1.2z" stroke="none"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_accessibility_footer__age">
+                ₫0
+            </div>
+            <div class="h-Ivjs ivEpTY"></div>
+            <div class="cart_accessibility_footer_checkout_row">
+                <h3 class="hidden">cart_accessibility_footer_checkout_row</h3>
+            <div class="cart_accessibility_footer_checkout_row__check">
+                <label class="stardust-checkbox"><input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="Click here to select all products"><div class="stardust-checkbox__box"></div>
+                </label>
+            </div>
+                <button class="stardust-button__check btn-style">Chọn Tất Cả (22)</button>
+                <button class="btn-style stardust-button__clear">Xóa</button>
+                <div></div>
+                <button class="clear-btn-style stardust-button_save">Lưu vào mục Đã thích</button>
+                <div class="stardust-button__clear"></div>
+                <div class="stardust-total-payment" role="region">
+                    <div class="stardust-total-payment_main">
+                    <div class="stardust-total-payment_main__list">
+                        <div class="stardust-total-payment_main__list__tite">Tổng thanh toán (0 Sản phẩm):</div>
+                        <div class="stardust-total-payment_main__list_coin">₫0</div>
+                    </div>
+                    </div>
+                    <div class="stardust-total-payment__space"></div>
+                </div>
+                <button class="button-solid button-solid--primary">
+                    <span class="TTXpRG">Mua hàng</span>
+                </button>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
